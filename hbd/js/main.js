@@ -2,14 +2,14 @@
 
       var background = "https://l.top4top.io/p_2583x9f5k1.png";
       var foto = "https://l.top4top.io/p_2583x9f5k1.png";
-      var musik = "music.mp3";
-      var panggilan = "Cinta";
+      var musik = "music.mp3" ;
+      var panggilan = "" ;
       var ucapan = "selamat ulang tahun, sehat selalu. gw suka sama lu tod!";
 
-      var hadiah1 = "what i love bout u";
-      var hadiah2 = "what makes u different";
-      var hadiah3 = "what u need to know";
-      var hadiah4 = "my wish for u";
+      var hadiah1 = "CIUM MWAH";
+      var hadiah2 = "IPON 14";
+      var hadiah3 = "SEPATU ABIBAS";
+      var hadiah4 = "TAS NIKIE";
 
       var noWhatsapp = "6285891263100";
 
@@ -68,12 +68,12 @@
       async function pilihHadiah(z) { hadiah = data[z]; await swalo.fire("Selamat kamu dapet " + hadiah); balas(); 
       } 
       
-      async function balas() { var { value: pesan } = await swalo.fire({ title: "Tulis harapan kamu di sini ya..", input: "text", confirmButtonText: "Kirim", }); 
+      async function balas() { var { value: pesan } = await swalo.fire({ title: "Tulis pesan", input: "text", confirmButtonText: "Kirim", }); 
       
       if (pesan) { 
-        await swalo.fire("Kirim ke wa aku ya nya"); 
+        await swalo.fire("Kirim ke wa aku ya jawaban nya"); 
         location.assign("https://api.whatsapp.com/send?phone=" + 
-        noWhatsapp + "&text=Hai, Makasih lohh.. ini " + hadiah + 
+        noWhatsapp + "&text=Hai, aku dapet " + hadiah + 
         ".%0A %0AAku mau bilang, " + pesan); 
         modal.style = "top: 60vh;opacity: 0;display: flex;"; 
         setTimeout(function () { modal.style = "display: none;"; }, 300); 
