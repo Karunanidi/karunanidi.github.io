@@ -65,7 +65,7 @@
       function closeModal() { modal.style = "top: 60vh;opacity: 0;display: flex;"; setTimeout(function () { modal.style = "display: none;"; }, 300); 
       } 
       
-      async function pilihHadiah(z) { hadiah = data[z]; await swalo.fire("Selamat kamu dapet " + hadiah); balas(); 
+      async function pilihHadiah(z) { hadiah = data[z]; await swalo.fire("" + hadiah); balas(); 
       } 
       
       async function balas() { var { value: pesan } = await swalo.fire({ title: "Tulis harapan kamu di sini ya..", input: "text", confirmButtonText: "Kirim", }); 
@@ -73,8 +73,7 @@
       if (pesan) { 
         await swalo.fire("Kirim ke wa aku ya nya"); 
         location.assign("https://api.whatsapp.com/send?phone=" + 
-        noWhatsapp + "&text=Hai, Makasih lohh.. ini " + hadiah + 
-        ".%0A %0AAku mau bilang, " + pesan); 
+        noWhatsapp + ".%0A %0AAku mau bilang, " + pesan); 
         modal.style = "top: 60vh;opacity: 0;display: flex;"; 
         setTimeout(function () { modal.style = "display: none;"; }, 300); 
         } else { 
