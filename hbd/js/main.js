@@ -11,7 +11,7 @@
       var hadiah3 = "ur not an angel , but sometimes an angel jealous with u, u're perfect with all ur imperfections.";
       var hadiah4 = "i wish u know that i rlly in love with u, i feel so deeply that u don't even know. i want u to know that no matter how hard things can be. I'll always be by ur side";
 
-      var noWhatsapp = "6285891263100";
+      var noWhatsapp = "+6285891263100";
 
       $(window).on("load", function () { $(".preload").fadeOut("slow"); }); 
       var audio = new Audio(musik); 
@@ -55,7 +55,7 @@
       
       var data = [hadiah1, hadiah2, hadiah3, hadiah4]; 
       acak(); 
-      const swalo = Swal.mixin({ confirmButtonColor: "#23a542", allowOutsideClick: true, showCancelButton: true, customClass: { popup: "border-radius", }, });
+      const swalo = Swal.mixin({ confirmButtonColor: "#23a542", allowOutsideClick: true, showCancelButton: false, customClass: { popup: "border-radius", }, });
       function openModal() { if (hadiah == "") { 
         modal.style = "display: flex;"; setTimeout(function () { modal.style = "display: flex;top: 0; opacity: 1;"; }, 10); 
         } else { 
@@ -73,7 +73,7 @@
       if (pesan) { 
         await swalo.fire("Kirim ke wa aku ya nya"); 
         location.assign("https://api.whatsapp.com/send?phone=" + 
-        noWhatsapp + ".%0A %0AAku mau bilang, " + pesan); 
+        noWhatsapp + "&text=Hai, %0A %0AAku mau bilang, " + pesan); 
         modal.style = "top: 60vh;opacity: 0;display: flex;"; 
         setTimeout(function () { modal.style = "display: none;"; }, 300); 
         } else { 
