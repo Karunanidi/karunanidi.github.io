@@ -4,7 +4,7 @@
       var foto = "image.jpg";
       var musik = "music.mp3";
       var panggilan = "Cinta";
-      var ucapan = "Happy Birthday my little sun,u know may see the world too bright that i just realized there's something brigther than that. It's you ";
+      var ucapan = "Happy Birthday my little sun,u know you may see the world too bright that i just realized there's something brigther than that. It's you ";
 
       var hadiah1 = "i love all parts of u, ur smile, ur eyes, ur laugh, breath, happiness, sad, even ur worst. I love everything about you";
       var hadiah2 = "u're so lovely, the way u talk, the way u think, and the way u hits different on me, nothing can compares to you";
