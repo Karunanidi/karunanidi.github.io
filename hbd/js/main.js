@@ -1,9 +1,9 @@
 
 
-      var background = "Luna.png";
+      var background = "https://l.top4top.io/p_2583x9f5k1.png";
       var foto = "https://l.top4top.io/p_2583x9f5k1.png";
       var musik = "music.mp3" ;
-      var panggilan = "Aqua" ;
+      var panggilan = "" ;
       var ucapan = "selamat ulang tahun, sehat selalu. gw suka sama lu tod!";
 
       var hadiah1 = "CIUM MWAH";
@@ -11,7 +11,7 @@
       var hadiah3 = "SEPATU ABIBAS";
       var hadiah4 = "TAS NIKIE";
 
-      var noWhatsapp = "";
+      var noWhatsapp = "6285891263100";
 
       $(window).on("load", function () { $(".preload").fadeOut("slow"); }); 
       var audio = new Audio(musik); 
