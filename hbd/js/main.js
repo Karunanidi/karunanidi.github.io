@@ -55,7 +55,7 @@
       
       var data = [hadiah1, hadiah2, hadiah3, hadiah4]; 
       acak(); 
-      const swalo = Swal.mixin({ confirmButtonColor: "#23a542", allowOutsideClick: true, showCancelButton: false, customClass: { popup: "border-radius", }, });
+      const swalo = Swal.mixin({ confirmButtonColor: "#23a542", allowOutsideClick: false, showCancelButton: false, customClass: { popup: "border-radius", }, });
       function openModal() { if (hadiah == "") { 
         modal.style = "display: flex;"; setTimeout(function () { modal.style = "display: flex;top: 0; opacity: 1;"; }, 10); 
         } else { 
