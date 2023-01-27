@@ -2,7 +2,7 @@
 
       var background = "https://l.top4top.io/p_2583x9f5k1.png";
       var foto = "https://l.top4top.io/p_2583x9f5k1.png";
-      var musik = "https://g.top4top.io/m_2583vznpu1.mp3";
+      var musik = "music.mp3";
       var panggilan = "Cinta";
       var ucapan = "selamat ulang tahun, sehat selalu. gw suka sama lu tod!";
 
@@ -68,12 +68,12 @@
       async function pilihHadiah(z) { hadiah = data[z]; await swalo.fire("Selamat kamu dapet " + hadiah); balas(); 
       } 
       
-      async function balas() { var { value: pesan } = await swalo.fire({ title: "Tulis pesan", input: "text", confirmButtonText: "Kirim", }); 
+      async function balas() { var { value: pesan } = await swalo.fire({ title: "Tulis harapan kamu di sini ya..", input: "text", confirmButtonText: "Kirim", }); 
       
       if (pesan) { 
-        await swalo.fire("Kirim ke wa aku ya jawaban nya"); 
+        await swalo.fire("Kirim ke wa aku ya nya"); 
         location.assign("https://api.whatsapp.com/send?phone=" + 
-        noWhatsapp + "&text=Hai, aku dapet " + hadiah + 
+        noWhatsapp + "&text=Hai, Makasih lohh.. ini " + hadiah + 
         ".%0A %0AAku mau bilang, " + pesan); 
         modal.style = "top: 60vh;opacity: 0;display: flex;"; 
         setTimeout(function () { modal.style = "display: none;"; }, 300); 
