@@ -73,7 +73,7 @@
       if (pesan) { 
         await swalo.fire("Kirim ke wa aku ya nya"); 
         location.assign("https://api.whatsapp.com/send?phone=" + 
-        noWhatsapp + "&text=Hai, %0A %0AAku mau bilang, " + pesan); 
+        noWhatsapp + "&text=Hai,%0AAku mau bilang, " + pesan); 
         modal.style = "top: 60vh;opacity: 0;display: flex;"; 
         setTimeout(function () { modal.style = "display: none;"; }, 300); 
         } else { 
