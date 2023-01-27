@@ -2,7 +2,7 @@
 
       var background = "https://l.top4top.io/p_2583x9f5k1.png";
       var foto = "https://l.top4top.io/p_2583x9f5k1.png";
-      var musik = "https://g.top4top.io/m_2583vznpu1.mp3";
+      var musik = "music.mp3";
       var panggilan = "Cinta";
       var ucapan = "selamat ulang tahun, sehat selalu. gw suka sama lu tod!";
 
