@@ -1,15 +1,15 @@
 
 
-      var background = "https://l.top4top.io/p_2583x9f5k1.png";
-      var foto = "https://l.top4top.io/p_2583x9f5k1.png";
-      var musik = "music.mp3" ;
-      var panggilan = "" ;
-      var ucapan = "selamat ulang tahun, sehat selalu. gw suka sama lu tod!";
+      var background = "image.jpeg";
+      var foto = "image.jpeg";
+      var musik = "music.mp3";
+      var panggilan = "Cinta";
+      var ucapan = "Happy Birthday my little sun,u know may see the world too bright that i just realized there's something brigther than that. It's you ";
 
-      var hadiah1 = "CIUM MWAH";
-      var hadiah2 = "IPON 14";
-      var hadiah3 = "SEPATU ABIBAS";
-      var hadiah4 = "TAS NIKIE";
+      var hadiah1 = "i love all parts of u, ur smile, ur eyes, ur laugh, breath, happiness, sad, even ur worst. I love everything about you";
+      var hadiah2 = "u're so lovely, the way u talk, the way u think, and the way u hits different on me, nothing can compares to you";
+      var hadiah3 = "ur not an angel , but sometimes an angel jealous with u, u're perfect with all ur imperfections.";
+      var hadiah4 = "i wish u know that i rlly in love with u, i feel so deeply that u don't even know. i want u to know that no matter how hard things can be. I'll always be by ur side";
 
       var noWhatsapp = "6285891263100";
 
@@ -68,12 +68,12 @@
       async function pilihHadiah(z) { hadiah = data[z]; await swalo.fire("Selamat kamu dapet " + hadiah); balas(); 
       } 
       
-      async function balas() { var { value: pesan } = await swalo.fire({ title: "Tulis pesan", input: "text", confirmButtonText: "Kirim", }); 
+      async function balas() { var { value: pesan } = await swalo.fire({ title: "Tulis harapan kamu di sini ya..", input: "text", confirmButtonText: "Kirim", }); 
       
       if (pesan) { 
-        await swalo.fire("Kirim ke wa aku ya jawaban nya"); 
+        await swalo.fire("Kirim ke wa aku ya nya"); 
         location.assign("https://api.whatsapp.com/send?phone=" + 
-        noWhatsapp + "&text=Hai, aku dapet " + hadiah + 
+        noWhatsapp + "&text=Hai, Makasih lohh.. ini " + hadiah + 
         ".%0A %0AAku mau bilang, " + pesan); 
         modal.style = "top: 60vh;opacity: 0;display: flex;"; 
         setTimeout(function () { modal.style = "display: none;"; }, 300); 
