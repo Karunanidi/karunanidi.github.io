@@ -55,17 +55,17 @@
       
       var data = [hadiah1, hadiah2, hadiah3, hadiah4]; 
       acak(); 
-      const swalo = Swal.mixin({ confirmButtonColor: "#23a542", allowOutsideClick: false, showCancelButton: false, customClass: { popup: "border-radius", }, });
+      const swalo = Swal.mixin({ confirmButtonColor: "#23a542", allowOutsideClick: false, showCancelButton: true, customClass: { popup: "border-radius", }, });
       function openModal() { if (hadiah == "") { 
         modal.style = "display: flex;"; setTimeout(function () { modal.style = "display: flex;top: 0; opacity: 1;"; }, 10); 
         } else { 
-        swalo.fire({ title: "Kamu dapet "+hadiah, timer: 3000, confirmButtonColor: "#fff", timerProgressBar: true }); 
+        swalo.fire({ hadiah, timer: 3000, confirmButtonColor: "#fff", timerProgressBar: true }); 
         } } 
         
       function closeModal() { modal.style = "top: 60vh;opacity: 0;display: flex;"; setTimeout(function () { modal.style = "display: none;"; }, 300); 
       } 
       
-      async function pilihHadiah(z) { hadiah = data[z]; await swalo.fire("" + hadiah); balas(); 
+      async function pilihHadiah(z) { hadiah = data[z]; await swalo.fire(hadiah); balas(); 
       } 
       
       async function balas() { var { value: pesan } = await swalo.fire({ title: "Tulis harapan kamu di sini ya..", input: "text", confirmButtonText: "Kirim", }); 
