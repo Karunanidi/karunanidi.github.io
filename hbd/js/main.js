@@ -2,14 +2,14 @@
 
       var background = "https://l.top4top.io/p_2583x9f5k1.png";
       var foto = "https://l.top4top.io/p_2583x9f5k1.png";
-      var musik = "music.mp3" ;
-      var panggilan = "" ;
+      var musik = "https://g.top4top.io/m_2583vznpu1.mp3";
+      var panggilan = "Cinta";
       var ucapan = "selamat ulang tahun, sehat selalu. gw suka sama lu tod!";
 
-      var hadiah1 = "CIUM MWAH";
-      var hadiah2 = "IPON 14";
-      var hadiah3 = "SEPATU ABIBAS";
-      var hadiah4 = "TAS NIKIE";
+      var hadiah1 = "what i love bout u";
+      var hadiah2 = "what makes u different";
+      var hadiah3 = "what u need to know";
+      var hadiah4 = "my wish for u";
 
       var noWhatsapp = "6285891263100";
 
