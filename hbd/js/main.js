@@ -1,7 +1,7 @@
 
 
-      var background = "image.jpeg";
-      var foto = "image.jpeg";
+      var background = "image.jpg";
+      var foto = "image.jpg";
       var musik = "music.mp3";
       var panggilan = "Cinta";
       var ucapan = "Happy Birthday my little sun,u know may see the world too bright that i just realized there's something brigther than that. It's you ";
